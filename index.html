@@ -72,6 +72,39 @@
 			</div>
 		</div>
 
+		<!-- Popup -->
+		<div class="popup">
+			<div class="close">
+				<img src="./src/images/close-popup.svg" alt="close icon" />
+			</div>
+			<h2 class="popup__heading">We would like to help you</h2>
+			<form class="form">
+				<input class="form__input" type="text" name="name" placeholder="Name" />
+				<textarea
+					class="form__textarea"
+					name="message"
+					placeholder="Message"
+				></textarea>
+				<label>
+					<span>How to answer you?</span>
+					<input
+						class="form__input"
+						type="number"
+						name="phone"
+						placeholder="Phone number"
+					/>
+				</label>
+				<input
+					class="form__input"
+					type="email"
+					name="email"
+					placeholder="Email"
+				/>
+				<button class="form__button">Send message</button>
+			</form>
+		</div>
+		<div class="overlay"></div>
+
 		<script src="./src/js/scripts.js"></script>
 	</body>
 </html>
