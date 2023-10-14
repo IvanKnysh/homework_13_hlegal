@@ -1,0 +1,125 @@
+.info {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	.tab {
+		display: flex;
+		align-items: center;
+		&__nav {
+			width: 35%;
+			padding-right: 60px;
+			border-right: 4px solid rgba(255, 255, 255, 0.3);
+			.nav__item {
+				margin-bottom: 30px;
+				&.active {
+					background: $gradient-text-red-reversed;
+					background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+				&:nth-last-child(1) {
+					margin-bottom: 0;
+				}
+			}
+			.nav__link {
+				display: block;
+				text-decoration: none;
+				color: $grey-text;
+				text-align: right;
+				font-size: 38px;
+				font-weight: 700;
+				cursor: pointer;
+				transition: color 0.3s;
+				&:hover {
+					color: $accent;
+				}
+			}
+		}
+		&__content {
+			width: 65%;
+			padding-left: 60px;
+			.tab__item {
+				display: none;
+				.tab__heading {
+					font-size: 30px;
+					font-weight: 700;
+					margin-bottom: 30px;
+				}
+				.tab__description {
+					font-size: 19px;
+					line-height: 30px;
+				}
+				&.active {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.info {
+		.tab {
+			&__nav {
+				width: 50%;
+			}
+			&__content {
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.info {
+		.tab {
+			flex-direction: column;
+			&__nav {
+				display: flex;
+				gap: 0 30px;
+				width: 100%;
+				padding-right: 0;
+				padding-bottom: 60px;
+				border-right: none;
+				border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+				overflow-x: auto;
+				&::-webkit-scrollbar {
+					display: none;
+				}
+				.nav__item {
+					margin-bottom: 0;
+				}
+				.nav__link {
+					text-align: center;
+					white-space: nowrap;
+				}
+			}
+			&__content {
+				width: 100%;
+				padding-left: 0;
+				padding-top: 60px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.info {
+		padding-left: 30px;
+		padding-right: 30px;
+		.tab {
+			&__nav {
+				padding-bottom: 30px;
+				.nav__link {
+					font-size: 30px;
+				}
+			}
+			&__content {
+				padding-top: 30px;
+				.tab__item {
+					.tab__heading {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+}
