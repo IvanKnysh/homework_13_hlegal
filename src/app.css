@@ -197,6 +197,19 @@ body {
   }
   .header .navbar .nav-menu {
     display: none;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+    box-shadow: 0 8px 20px -10px #000;
+  }
+  .header .navbar .nav-menu__item {
+    padding: 15px 0;
+  }
+  .header .navbar .nav-menu.active {
+    display: block;
   }
   .header .navbar .navbar__brand {
     padding-left: 15px;

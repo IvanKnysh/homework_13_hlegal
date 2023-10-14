@@ -151,6 +151,19 @@
 			}
 			.nav-menu {
 				display: none;
+				position: absolute;
+				top: 70px;
+				width: 100%;
+				text-align: center;
+				padding: 20px;
+				background: $gradient-supersoft;
+				box-shadow: 0 8px 20px -10px #000;
+				&__item {
+					padding: 15px 0;
+				}
+				&.active {
+					display: block;
+				}
 			}
 			.navbar__brand {
 				padding-left: 15px;
