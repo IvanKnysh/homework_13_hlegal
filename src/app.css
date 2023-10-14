@@ -15,6 +15,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -22,8 +26,202 @@ body {
 }
 
 .container {
-  position: relative;
-  max-width: 1330px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1640px;
+  }
+}
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+@media (max-width: 1440px) {
+  .container {
+    max-width: 944px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 688px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+.header {
+  background: url("./images/hero-bg.png") no-repeat 50% 50%, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+  background-size: auto 100%;
+}
+.header .navbar {
+  padding-top: 50px;
+}
+.header .navbar .navbar__brand {
+  float: left;
+}
+.header .navbar .nav-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.header .navbar .nav-info .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #e6e6f0;
+  margin: 0 6px;
+}
+.header .navbar .nav-info .lang {
+  display: flex;
+  align-items: center;
+}
+.header .navbar .nav-info .lang__item {
+  padding: 5px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.header .navbar .nav-info .lang__item:hover {
+  border-radius: 8px;
+  background-color: #f0145a;
+}
+.header .navbar .nav-info .lang__item.active {
+  border-radius: 8px;
+  background-color: #f0145a;
+}
+.header .navbar .nav-info .address__item {
+  font-size: 16px;
+}
+.header .navbar .nav-info .phone__item {
+  font-weight: 700;
+}
+.header .navbar .nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 15px;
+}
+.header .navbar .nav-menu__link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+.header .navbar .nav-menu__link:hover {
+  color: #f0145a;
+}
+.header .navbar .navbar__hamburger {
+  display: none;
+}
+.header .content {
+  padding-top: 261px;
+  padding-bottom: 30px;
+}
+.header .content .content__heading {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  padding-bottom: 305px;
+}
+.header .content .content__btn {
+  padding: 0;
+  margin: 0 auto;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: url("./images/scroll-btn.svg") no-repeat;
+}
+.header .content .content__btn:hover {
+  background: url("./images/scroll-btn-hover.svg") no-repeat;
+}
+
+@media (min-width: 1920px) {
+  .header .content {
+    padding-top: 361px;
+  }
+  .header .content .content__heading {
+    padding-bottom: 405px;
+  }
+}
+@media (max-width: 1024px) {
+  .header .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .navbar .navbar__brand {
+    order: 2;
+    float: none;
+  }
+  .header .navbar .nav-info {
+    order: 1;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  .header .navbar .nav-info .address__item {
+    color: #b3b3ba;
+  }
+  .header .navbar .nav-menu {
+    order: 3;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  .header .content {
+    padding-top: 269px;
+  }
+  .header .content .content__heading {
+    padding-bottom: 417px;
+  }
+}
+@media (max-width: 768px) {
+  .header .navbar {
+    padding-top: 0;
+  }
+  .header .navbar .nav-info {
+    justify-content: space-between;
+    padding: 10px 15px;
+    background: rgba(245, 245, 250, 0.2);
+    margin-bottom: 15px;
+  }
+  .header .navbar .nav-info .socila,
+  .header .navbar .nav-info .dot,
+  .header .navbar .nav-info .address {
+    display: none;
+  }
+  .header .navbar .nav-menu {
+    display: none;
+  }
+  .header .navbar .navbar__brand {
+    padding-left: 15px;
+  }
+  .header .navbar .navbar__brand img {
+    width: 69px;
+  }
+  .header .navbar .navbar__hamburger {
+    display: block;
+    order: 3;
+    background: transparent;
+    padding: 0;
+    border: none;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+  }
+  .header .content {
+    padding-top: 129px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header .content .content__heading {
+    padding-bottom: 159px;
+  }
 }/*# sourceMappingURL=app.css.map */

@@ -36,6 +36,10 @@ button {
 	cursor: pointer;
 }
 
+img {
+	display: block;
+}
+
 body {
 	font-family: "Montserrat", sans-serif;
 	color: $basic-white;
@@ -43,8 +47,37 @@ body {
 }
 
 .container {
-	position: relative;
-	max-width: 1330px;
 	padding: 0 20px;
 	margin: 0 auto;
+}
+
+@media (min-width: 1920px) {
+	.container {
+		max-width: 1640px;
+	}
+}
+
+@media (max-width: 1920px) {
+	.container {
+		max-width: 1360px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.container {
+		max-width: 944px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container {
+		max-width: 688px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 100%;
+		padding: 0;
+	}
 }
