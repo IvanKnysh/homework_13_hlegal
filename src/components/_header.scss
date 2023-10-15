@@ -1,12 +1,9 @@
 .header {
 	background: url("./images/hero-bg.png") no-repeat 50% 50%;
 	background-size: auto 100%;
-	&.remove-logo {
-		background: transparent;
-	}
 	.navbar {
 		padding-top: 50px;
-		.navbar__brand {
+		&__brand {
 			float: left;
 		}
 		.nav-info {
@@ -95,6 +92,63 @@
 			}
 		}
 	}
+	&.remove-logo {
+		background: transparent;
+	}
+	&.white-header {
+		.navbar {
+			&__brand {
+				display: flex;
+				align-items: flex-start;
+				text-decoration: none;
+				color: $main-regular;
+				font-size: 36px;
+				span {
+					display: block;
+					margin: 0 10px;
+					color: $accent;
+					font-size: 40px;
+					font-weight: 700;
+				}
+			}
+			.nav-info {
+				.lang {
+					color: $grey-text;
+					&__item {
+						&:hover {
+							color: $basic-white;
+						}
+						&.active {
+							color: $basic-white;
+						}
+					}
+				}
+				.address {
+					&__item {
+						color: $grey-text;
+					}
+				}
+				.phone {
+					&__item {
+						color: $grey-text;
+					}
+				}
+			}
+			.nav-menu {
+				&__link {
+					color: $active-regular;
+					&:hover {
+						color: $accent;
+						border-bottom: 2px solid $accent;
+					}
+					&.active {
+						color: $accent;
+						border-bottom: 2px solid $accent;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1920px) {
@@ -113,7 +167,7 @@
 		.navbar {
 			display: flex;
 			flex-direction: column;
-			.navbar__brand {
+			&__brand {
 				order: 2;
 				float: none;
 			}
@@ -173,7 +227,7 @@
 					display: block;
 				}
 			}
-			.navbar__brand {
+			&__brand {
 				padding-left: 15px;
 				img {
 					width: 69px;
@@ -197,6 +251,23 @@
 			padding-right: 20px;
 			.content__heading {
 				padding-bottom: 159px;
+			}
+		}
+		&.white-header {
+			.navbar {
+				&__brand {
+					font-size: 20px;
+					span {
+						display: block;
+						margin: 0 10px;
+						color: $accent;
+						font-size: 25px;
+						font-weight: 700;
+					}
+				}
+				.nav-info {
+					background: $grey-bg;
+				}
 			}
 		}
 	}

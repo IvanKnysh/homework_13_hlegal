@@ -18,12 +18,12 @@ document.querySelector(".popup .close").addEventListener("click", () => {
 
 // Tabs
 const removeAllActiveClassesLi = () => {
-	document.querySelectorAll(".info .tab__nav .nav__item").forEach((item) => {
+	document.querySelectorAll(".tab__nav .nav__item").forEach((item) => {
 		item.classList.remove("active");
 	});
 };
 
-document.querySelectorAll(".info .tab__nav .nav__item").forEach((item) => {
+document.querySelectorAll(".tab__nav .nav__item").forEach((item) => {
 	item.addEventListener("click", (e) => {
 		e.preventDefault();
 

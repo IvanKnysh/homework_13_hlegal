@@ -108,13 +108,10 @@ body {
   background: url("./images/hero-bg.png") no-repeat 50% 50%;
   background-size: auto 100%;
 }
-.header.remove-logo {
-  background: transparent;
-}
 .header .navbar {
   padding-top: 50px;
 }
-.header .navbar .navbar__brand {
+.header .navbar__brand {
   float: left;
 }
 .header .navbar .nav-info {
@@ -198,6 +195,49 @@ body {
 .header .content .content__btn:hover {
   background: url("./images/scroll-btn-hover.svg") no-repeat;
 }
+.header.remove-logo {
+  background: transparent;
+}
+.header.white-header .navbar__brand {
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  color: #323264;
+  font-size: 36px;
+}
+.header.white-header .navbar__brand span {
+  display: block;
+  margin: 0 10px;
+  color: #f0145a;
+  font-size: 40px;
+  font-weight: 700;
+}
+.header.white-header .navbar .nav-info .lang {
+  color: #b3b3ba;
+}
+.header.white-header .navbar .nav-info .lang__item:hover {
+  color: #fff;
+}
+.header.white-header .navbar .nav-info .lang__item.active {
+  color: #fff;
+}
+.header.white-header .navbar .nav-info .address__item {
+  color: #b3b3ba;
+}
+.header.white-header .navbar .nav-info .phone__item {
+  color: #b3b3ba;
+}
+.header.white-header .navbar .nav-menu__link {
+  color: #24a3ff;
+}
+.header.white-header .navbar .nav-menu__link:hover {
+  color: #f0145a;
+  border-bottom: 2px solid #f0145a;
+}
+.header.white-header .navbar .nav-menu__link.active {
+  color: #f0145a;
+  border-bottom: 2px solid #f0145a;
+}
 
 @media (min-width: 1920px) {
   .header .content {
@@ -212,7 +252,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .header .navbar .navbar__brand {
+  .header .navbar__brand {
     order: 2;
     float: none;
   }
@@ -267,10 +307,10 @@ body {
   .header .navbar .nav-menu.active {
     display: block;
   }
-  .header .navbar .navbar__brand {
+  .header .navbar__brand {
     padding-left: 15px;
   }
-  .header .navbar .navbar__brand img {
+  .header .navbar__brand img {
     width: 69px;
   }
   .header .navbar .navbar__hamburger {
@@ -292,6 +332,19 @@ body {
   }
   .header .content .content__heading {
     padding-bottom: 159px;
+  }
+  .header.white-header .navbar__brand {
+    font-size: 20px;
+  }
+  .header.white-header .navbar__brand span {
+    display: block;
+    margin: 0 10px;
+    color: #f0145a;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .header.white-header .navbar .nav-info {
+    background: #f5f5fa;
   }
 }
 .popup {
@@ -794,6 +847,58 @@ body {
   line-height: 22px;
   padding-top: 15px;
 }
+.publications.publications-page {
+  margin-top: 60px;
+}
+.publications.publications-page .tab__nav {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  gap: 0 2px;
+  background-color: #e6e6f0;
+  border-radius: 10px;
+  border: 2px solid #e6e6f0;
+  margin: 0 auto 30px;
+}
+.publications.publications-page .tab__nav .nav__item.active {
+  border-radius: 10px;
+  background-color: #fff;
+}
+.publications.publications-page .tab__nav .nav__link {
+  display: block;
+  padding: 8px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #323264;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.publications.publications-page .tab__nav .nav__link:hover {
+  background-color: #f5f5fa;
+}
+.publications.publications-page .tab__content .tab__item {
+  display: none;
+}
+.publications.publications-page .tab__content .tab__item.active {
+  display: block;
+}
+.publications.publications-page .more-publications {
+  width: 211px;
+  height: 56px;
+  border-radius: 12px;
+  background: #24a3ff;
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin: 30px auto 0;
+  transition: background 0.3s;
+}
+.publications.publications-page .more-publications:hover {
+  background: #f0145a;
+}
 
 @media (max-width: 1024px) {
   .publications .posts__item {
@@ -801,6 +906,12 @@ body {
   }
   .publications .posts__item:nth-last-child(1) {
     width: 100%;
+  }
+  .publications.publications-page .posts__item {
+    width: calc(50% - 15px);
+  }
+  .publications.publications-page .posts__item:nth-last-child(1) {
+    width: calc(50% - 15px);
   }
 }
 @media (max-width: 768px) {
@@ -815,6 +926,15 @@ body {
     width: 100%;
   }
   .publications .posts__item:nth-last-child(1) {
+    width: 100%;
+  }
+  .publications.publications-page {
+    margin-top: 10px;
+  }
+  .publications.publications-page .posts__item {
+    width: 100%;
+  }
+  .publications.publications-page .posts__item:nth-last-child(1) {
     width: 100%;
   }
 }
