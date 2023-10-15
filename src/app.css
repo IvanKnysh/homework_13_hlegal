@@ -307,13 +307,17 @@ body {
 }
 .popup .popup__heading {
   font-size: 38px;
-  font-style: normal;
   font-weight: 700;
   background: linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .popup .popup__heading {
+    font-size: 30px;
+  }
 }
 .popup .form {
   width: 100%;
@@ -522,6 +526,11 @@ body {
   margin-top: 10px;
   margin-bottom: 60px;
 }
+@media (max-width: 768px) {
+  .services__heading {
+    font-size: 30px;
+  }
+}
 .services .flx-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -612,6 +621,11 @@ body {
           background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .team .slider__item .slider__content h3 {
+    font-size: 30px;
+  }
 }
 .team .slider__item .slider__content h5 {
   font-size: 16px;

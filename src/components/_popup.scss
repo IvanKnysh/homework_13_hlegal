@@ -21,12 +21,7 @@
 		}
 	}
 	.popup__heading {
-		font-size: 38px;
-		font-style: normal;
-		font-weight: 700;
-		background: $gradient-red-text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include title;
 		margin-bottom: 30px;
 	}
 	.form {

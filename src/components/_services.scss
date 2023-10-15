@@ -14,11 +14,7 @@
 		}
 	}
 	&__heading {
-		font-size: 38px;
-		font-weight: 700;
-		background: $gradient-red-text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include title;
 		margin-top: 10px;
 		margin-bottom: 60px;
 	}

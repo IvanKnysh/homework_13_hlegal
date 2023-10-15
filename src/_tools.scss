@@ -1,0 +1,10 @@
+@mixin title {
+	font-size: 38px;
+	font-weight: 700;
+	background: $gradient-red-text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	@media (max-width: 768px) {
+		font-size: 30px;
+	}
+}
