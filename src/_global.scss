@@ -44,6 +44,10 @@ img {
 	display: block;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Montserrat", sans-serif;
 	color: $basic-white;
