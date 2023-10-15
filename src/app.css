@@ -108,6 +108,9 @@ body {
   background: url("./images/hero-bg.png") no-repeat 50% 50%;
   background-size: auto 100%;
 }
+.header.remove-logo {
+  background: transparent;
+}
 .header .navbar {
   padding-top: 50px;
 }
@@ -165,6 +168,11 @@ body {
 }
 .header .navbar .nav-menu__link:hover {
   color: #f0145a;
+  border-bottom: 2px solid #f0145a;
+}
+.header .navbar .nav-menu__link.active {
+  color: #f0145a;
+  border-bottom: 2px solid #f0145a;
 }
 .header .navbar .navbar__hamburger {
   display: none;
