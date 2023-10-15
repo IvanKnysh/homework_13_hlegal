@@ -708,4 +708,77 @@ body {
   .logos .logos-wrapper__item {
     width: 100%;
   }
+}
+.publications {
+  background-color: #f5f5fa;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.publications__link {
+  text-decoration: none;
+  color: #24a3ff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: url("./images/services-arrow.svg") no-repeat 100% 50%;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+.publications__link:hover {
+  color: #f0145a;
+}
+.publications__heading {
+  font-size: 38px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .publications__heading {
+    font-size: 30px;
+  }
+}
+.publications .posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.publications .posts__item {
+  width: calc(33.3333333333% - 20px);
+  background-color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  overflow: hidden;
+}
+.publications .posts__item img {
+  width: 100%;
+}
+.publications .posts__content {
+  padding: 30px;
+}
+.publications .posts__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #24a3ff;
+  margin-bottom: 15px;
+}
+.publications .posts__date {
+  color: #b3b3ba;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #f5f5fa;
+}
+.publications .posts__description {
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
+  padding-top: 15px;
 }/*# sourceMappingURL=app.css.map */
