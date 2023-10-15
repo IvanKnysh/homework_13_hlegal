@@ -1,0 +1,113 @@
+.team {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	.slider {
+		background-color: $grey-bg;
+		border-radius: 12px;
+		.slick-dots {
+			bottom: -46px;
+			li {
+				button {
+					&:before {
+						font-size: 16px;
+						opacity: 0.2;
+						color: $active-regular;
+					}
+				}
+				&.slick-active {
+					button {
+						&:before {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+		&__item {
+			display: flex;
+			overflow: hidden;
+			border-radius: 12px;
+			.slider__img {
+				width: 400px;
+				height: 298px;
+				object-fit: cover;
+			}
+			.slider__content {
+				padding: 30px;
+				h4 {
+					width: fit-content;
+					color: $active-regular;
+					background: url("./images/services-arrow.svg") no-repeat 100% 50%;
+					text-transform: uppercase;
+					padding-right: 15px;
+					margin-bottom: 5px;
+				}
+				h3 {
+					font-size: 38px;
+					font-weight: 700;
+					background: $gradient-red-text;
+					background-clip: text;
+					-webkit-text-fill-color: transparent;
+					margin-bottom: 30px;
+				}
+				h5 {
+					font-size: 16px;
+					font-weight: 700;
+					color: $grey-text;
+					margin-bottom: 6px;
+				}
+				h6 {
+					font-size: 14px;
+					color: $grey-text;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.team {
+		.slider {
+			&__item {
+				.slider__img {
+					height: 528px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.team {
+		.slider {
+			&__item {
+				flex-direction: column;
+				.slider__img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.team {
+		padding-left: 30px;
+		padding-right: 30px;
+		.slider {
+			&__item {
+				.slider__content {
+					padding: 30px;
+					h4 {
+						font-size: 14px;
+					}
+					h3 {
+						font-size: 30px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -561,4 +561,96 @@ body {
   .services .flx-wrapper__item {
     width: 100%;
   }
+}
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.team .slider {
+  background-color: #f5f5fa;
+  border-radius: 12px;
+}
+.team .slider .slick-dots {
+  bottom: -46px;
+}
+.team .slider .slick-dots li button:before {
+  font-size: 16px;
+  opacity: 0.2;
+  color: #24a3ff;
+}
+.team .slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+.team .slider__item {
+  display: flex;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.team .slider__item .slider__img {
+  width: 400px;
+  height: 298px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .slider__item .slider__content {
+  padding: 30px;
+}
+.team .slider__item .slider__content h4 {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #24a3ff;
+  background: url("./images/services-arrow.svg") no-repeat 100% 50%;
+  text-transform: uppercase;
+  padding-right: 15px;
+  margin-bottom: 5px;
+}
+.team .slider__item .slider__content h3 {
+  font-size: 38px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+.team .slider__item .slider__content h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #b3b3ba;
+  margin-bottom: 6px;
+}
+.team .slider__item .slider__content h6 {
+  font-size: 14px;
+  color: #b3b3ba;
+  font-weight: 400;
+}
+
+@media (max-width: 1440px) {
+  .team .slider__item .slider__img {
+    height: 528px;
+  }
+}
+@media (max-width: 1024px) {
+  .team .slider__item {
+    flex-direction: column;
+  }
+  .team .slider__item .slider__img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .team {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .team .slider__item .slider__content {
+    padding: 30px;
+  }
+  .team .slider__item .slider__content h4 {
+    font-size: 14px;
+  }
+  .team .slider__item .slider__content h3 {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=app.css.map */
