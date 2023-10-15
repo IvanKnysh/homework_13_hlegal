@@ -46,15 +46,21 @@ document.querySelectorAll(".info .tab__nav .nav__item").forEach((item) => {
 });
 
 // scroll
-document.querySelector("button.content__btn").addEventListener("click", () => {
-	document.querySelector(".info").scrollIntoView({ behavior: "smooth" });
-});
+if (document.querySelector("button.content__btn")) {
+	document
+		.querySelector("button.content__btn")
+		.addEventListener("click", () => {
+			document.querySelector(".info").scrollIntoView({ behavior: "smooth" });
+		});
+}
 
 // slider
-$(".slider").slick({
-	arrows: false,
-	infinite: true,
-	dots: true,
-	slidesToShow: 1,
-	slidesToScroll: 1,
-});
+if (document.querySelector(".slider")) {
+	$(".slider").slick({
+		arrows: false,
+		infinite: true,
+		dots: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	});
+}

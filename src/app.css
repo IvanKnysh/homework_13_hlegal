@@ -392,7 +392,6 @@ body {
 }
 .info {
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 .info .tab {
   display: flex;
@@ -505,6 +504,7 @@ body {
   }
 }
 .services {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .services__link {
@@ -577,7 +577,7 @@ body {
 }
 .team {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 16px;
 }
 .team .slider {
   background-color: #f5f5fa;
@@ -673,7 +673,7 @@ body {
   }
 }
 .logos {
-  padding-top: 16px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .logos__heading {
