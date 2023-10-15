@@ -805,4 +805,83 @@ body {
   .publications .posts__item:nth-last-child(1) {
     width: 100%;
   }
+}
+.footer {
+  background-color: #f5f5fa;
+}
+.footer .footer-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 2px solid #e6e6f0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-wrapper__info .footer-wrapper__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+}
+.footer .footer-wrapper__info .footer-wrapper__item .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #b3b3ba;
+  margin: 0 10px;
+}
+.footer .footer-wrapper__info .footer-wrapper__item .address {
+  font-size: 16px;
+  color: #323264;
+}
+.footer .footer-wrapper__info .footer-wrapper__item .phone {
+  font-size: 16px;
+  color: #46466e;
+  font-weight: 700;
+}
+.footer .footer-wrapper__info .footer-wrapper__item .footer-wrapper__link {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: #24a3ff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+.footer .footer-wrapper__info .footer-wrapper__item .footer-wrapper__link:hover {
+  color: #f0145a;
+}
+.footer .footer-wrapper__info .footer-wrapper__item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.footer .footer-wrapper__copyright p {
+  font-size: 16px;
+  color: #b3b3ba;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .footer .footer-wrapper {
+    flex-direction: column;
+  }
+  .footer .footer-wrapper__info .footer-wrapper__item {
+    flex-direction: column;
+  }
+  .footer .footer-wrapper__info .footer-wrapper__item .address {
+    margin-bottom: 10px;
+  }
+  .footer .footer-wrapper__info .footer-wrapper__item .phone {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .footer .footer-wrapper__info .footer-wrapper__item .dot {
+    display: none;
+  }
+  .footer .footer-wrapper__info .footer-wrapper__item:nth-last-child(1) {
+    margin-bottom: 30px;
+  }
+  .footer .footer-wrapper__copyright p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=app.css.map */
