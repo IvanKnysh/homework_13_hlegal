@@ -653,4 +653,45 @@ body {
   .team .slider__item .slider__content h3 {
     font-size: 30px;
   }
+}
+.logos {
+  padding-top: 16px;
+  padding-bottom: 60px;
+}
+.logos__heading {
+  color: #323264;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.logos .logos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.logos .logos-wrapper__item {
+  width: 25%;
+}
+
+@media (max-width: 1440px) {
+  .logos .logos-wrapper {
+    border-radius: 0;
+  }
+  .logos .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .logos .logos-wrapper__item {
+    width: 33.3333333333%;
+  }
+}
+@media (max-width: 768px) {
+  .logos {
+    padding-bottom: 0;
+  }
+  .logos .logos-wrapper__item {
+    width: 100%;
+  }
 }/*# sourceMappingURL=app.css.map */
